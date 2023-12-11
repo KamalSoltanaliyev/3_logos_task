@@ -1,0 +1,31 @@
+.container2 {
+  padding: 50px 50px;
+}
+.polukruq {
+  background-color: #eabf4a;
+  height: 50px;
+  width: 100px;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+}
+
+.polukruq::after {
+  background-color: #c64034;
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 50px;
+  left: 100px;
+  top: -50px;
+  border-radius: 0 50px 50px 0;
+}
+
+.mirror {
+  background-color: #4e87e9;
+  transform: rotateZ(180deg);
+  left: 100px;
+}
+
+.mirror::after {
+  background-color: #4ec06e;
+}
